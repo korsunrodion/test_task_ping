@@ -1,0 +1,56 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-evenly;
+    max-height: 600px;
+
+    .header {
+        background-color: yellowgreen;
+        width: 100%;
+        height: 170px;
+        text-align: center;
+        line-height: 170px;
+        color: #F9F9F9;
+    }
+
+    .form {
+        label {
+            display: block;
+            margin-bottom: 7px;
+            color: #333;
+        }
+
+        input {
+            font-size: 17px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: white;
+            outline: none;
+            &:hover {
+                background-color: gray;
+                color: #FFF;
+            }
+            &:active {
+                background-color: yellow;
+                color: #222;
+            }
+            &[type="text"]:focus {
+                background-color: yellow;
+                color: #222;
+            }
+
+            &[type="text"] {
+                width: 400px;
+                border-right: 0;
+            }
+        }
+    }
+
+    .status {
+        height: 50px;
+        justify-self: baseline;
+        font-size: 18px;
+    }
+}
